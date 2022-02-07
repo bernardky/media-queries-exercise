@@ -105,10 +105,6 @@ input[type="checkbox"] {
 
 /* Media queries */
 @media (max-width: 768px) {
-  input[type="checkbox"] {
-    display: block;
-  }
-
   .menu {
     display: none;
     position: absolute;
