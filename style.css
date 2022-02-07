@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: pink;
+  }
+
+  h1 {
+    font-size: 10rem;
+  }
+}
