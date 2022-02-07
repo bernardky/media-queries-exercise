@@ -1,15 +1,134 @@
-@media (min-width: 768px) {
-  body {
-    background-color: blue;
-  }
+/* Reset default styling; general utilities */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (min-width: 1024px) {
-  body {
-    background-color: pink;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation bar styling start */
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+}
+
+ul > li {
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+button {
+  padding: 15px;
+}
+
+button {
+  background: none;
+  color: white;
+  font-weight: 700;
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(43, 43, 43);
+}
+
+/* Dropdown menu styling */
+.features {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(43, 43, 43);
+  border-radius: 5px;
+  position: absolute;
+  top: 38px;
+  width: 120px;
+  display: none; /* hide the menu by default */
+}
+
+.dropdown > li {
+  margin-bottom: 10px;
+}
+
+.features:hover .dropdown {
+  display: block; /* appear on hover at features class */
+}
+
+/*Mobile responsive nav bar*/
+/* checkbox hack */
+input[type="checkbox"] {
+  display: none;
+}
+/*Hamburger*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  color: white;
+}
+
+.checkbox_toggle {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  input[type="checkbox"] {
+    display: block;
   }
 
-  h1 {
-    font-size: 10rem;
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .dropdown {
+    left: 55%;
+    top: 2rem;
   }
 }

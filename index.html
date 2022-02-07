@@ -8,6 +8,31 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <nav>
+      <!-- logo -->
+      <img src="thc-logo.jfif" alt="thc logo" />
+      <!-- checkbox hamburger menu hack -->
+
+      <input type="checkbox" name="checkbox_toggle" class="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger"> &#9776;</label>
+
+      <!-- navigation menu -->
+      <ul class="menu">
+        <li class="home"><a href="#">Home</a></li>
+        <li class="features">
+          <a href="#">Features</a>
+          <!-- dropdown -->
+          <ul class="dropdown">
+            <li><a href="#">Feature 1</a></li>
+            <li><a href="#">Feature 2</a></li>
+            <li><a href="#">Feature 3</a></li>
+            <li><a href="#">Feature 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <button>Sign Up</button>
+      </ul>
+    </nav>
   </body>
 </html>
