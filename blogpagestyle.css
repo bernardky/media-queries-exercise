@@ -66,6 +66,7 @@ footer {
   justify-content: center;
 }
 
+/* responsive design code starts here */
 @media (max-width: 768px) {
   nav {
     display: none;
